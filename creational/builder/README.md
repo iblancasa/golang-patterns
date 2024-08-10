@@ -1,0 +1,2 @@
+# Builder
+The Builder design pattern is all about constructing complex objects step by step. Imagine you’re ordering a custom pizza. You might start by choosing the crust, then add sauce, cheese, and toppings. Each step adds a specific component to the pizza, and at the end, you have exactly the pizza you want. The Builder pattern works similarly: it allows you to construct an object by specifying its individual parts, step by step, without having to worry about the complexity of the final object.
