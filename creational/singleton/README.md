@@ -1,0 +1,8 @@
+# Singleton
+The Singleton design pattern is a concept that's all about ensuring a particular class has only one instance, and it provides a global point of access to that instance. Imagine you have a resource in your application that should be shared, like a configuration file or a connection to a database. You don’t want multiple versions of this resource floating around because that could lead to inconsistencies or conflicts. The Singleton pattern solves this by making sure that whenever you access this resource, you’re always getting the same instance.
+
+Here’s a simple way to think about it: imagine you’re in a small town with only one library. No matter how many people want to read a book, there’s only one library they go to. If someone tries to build another library, they’re told, “Hey, we already have one!” The Singleton pattern is like that; it ensures there’s only one "library" (or instance) in your program.
+
+In Golang, the Singleton pattern is usually implemented using a combination of package-level variables and synchronization techniques to ensure that only one instance of a type is created, even in a multi-threaded environment. The pattern can be a bit tricky to implement correctly because you have to ensure thread-safety while also lazily creating the instance only when it’s needed.
+
+It’s a handy pattern, but like all tools, it should be used thoughtfully. Overusing singletons can lead to tightly coupled code and make testing harder, so it's best suited for scenarios where you genuinely need a single, shared resource.
